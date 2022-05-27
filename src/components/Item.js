@@ -6,6 +6,11 @@ const Item = ({ searchTerm }) => {
     <div>
       <h2>{searchTerm} Pictures</h2>
       <Container searchTerm={searchTerm} />
+
+      {searchTerm==='bird' &&
+        <Container searchTerm={searchTerm} />
+
+  }
     </div>
   );
 };
